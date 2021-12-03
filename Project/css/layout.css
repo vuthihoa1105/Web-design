@@ -1,0 +1,126 @@
+@font-face {
+    src: url(../font/Chunkfive.otf);
+    font-family: 'ChunkFive';
+}
+
+@font-face {
+    src: url(../font/FreeSansBold.otf);
+    font-family: 'FreeSans';
+}
+@font-face {
+    src: url();
+    font-family: 'ChunkFive';
+}
+
+@font-face {
+    src: url(../font/Helvetica-Neue-Medium_22555.ttf);
+    font-family: 'Helvetica';
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 100%;
+    display: block;
+    background-color: #fdfdfd;
+    font-family: 'Helvetica';
+}
+
+/* header */
+#header .header__top {
+    font-family: ChunkFive;
+    font-size: 36px;
+    color: #000;
+    height: 95px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__top .logo span {
+    color: #f03c3c;
+}
+
+.header__top .search {
+    position: relative;
+}
+.header__top .search input{
+    width: 200px;
+    height: 32px;
+    background-color: #fff;
+    border: 2px solid #ececec;
+    font-size: 12px;
+    padding: 0px 10px; 
+}
+.search ::-webkit-input-placeholder { 
+    font-family: 'Helvetica';
+    color: #ececec;
+}
+.header__top .search .icon-search {
+    position: absolute;
+    right: 2px;
+    top: 11px;
+    padding: 9px;
+    width: 18px;
+}
+#header .nav ul{
+    display: flex;
+    justify-content: flex-start;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border-top: 1px solid #ececec;
+}
+
+.nav ul li {
+    display: block;
+    padding: 20px 0;
+}
+
+.nav ul .red-line {
+    border-top: 2px solid #f03c3c;
+}
+.nav li a{
+    text-decoration: none;
+    padding: 0 24px;
+    border-right: 1px solid #ececec;
+    color: #2b2b2b;
+    font-size: 14px;
+    cursor: pointer;
+}
+.nav li:hover > a {
+    color: #f03c3c;
+    font-weight: 600;
+}
+/* footer */
+#footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#footer .footer__social ul{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer__social ul li {
+    display: block;
+    padding: 20px 0;
+    margin-right: 4px;
+}
+
+#footer .footer-text {
+    text-align: right;
+    color: #4f5356;
+}
+.footer-text__top {
+    font-weight: 600;
+    font-size: 12px;
+}
+.footer-text__bottom {
+    font-size: 11px;
+}

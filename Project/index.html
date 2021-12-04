@@ -1,71 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gridzilla</title>
     <link rel="stylesheet" href="./css/layout.css">
+    <!-- <link rel="stylesheet" href="./css/grid.css"> -->
+    <link rel="stylesheet" href="./css/home.css">
 </head>
+
 <body>
+    <!-- header start -->
+    <div class="container" id="header">
+        <div class="header__top">
+            <div class="logo">Gridzilla<span>.</span></div>
+            <div class="search">
+                <input type="text" id="txt-search" placeholder="Enter your search ...">
+                <img src="images/icons/img-icon-search.gif" alt="ảnh" class="icon-search">
+            </div>
+        </div>
+        <div class="nav">
+            <ul>
+                <li class="red-line"><a href="#">HOME</a></li>
+                <li><a href="./about.html">ABOUT</a></li>
+                <li><a href="./blog.html">BLOG</a></li>
+                <li><a href="./contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- header end -->
+
     <div class="container">
-        <!-- header start -->
-        <div id="header">
-            <div class="header__top">
-                <div class="logo">Gridzilla<span>.</span></div>
-                <div class="search">
-                    <input type="text" id="txt-search" placeholder="Enter your search ...">
-                    <img src="images/icons/img-icon-search.gif" alt="ảnh" class="icon-search">
+        <!-- slider start -->
+        <div id="slider">
+            <div class="row">
+                <div class="col col-4">
+                    <a href="./images/img/collis.gif" class="item-top">
+                        <img src="./images/img/collis.gif" alt="ảnh">
+                    </a>
+                </div>
+                <div class="col col-4">
+                    <a href="./images/img/home2.gif" class="item-top">
+                        <img src="./images/img/home2.gif" alt="ảnh">
+                    </a>
+                </div>
+                <div class="col col-4">
+                    <a href="./images/img/home3.gif" class="item-top">
+                        <img src="./images/img/home3.gif" alt="ảnh">
+                    </a>
                 </div>
             </div>
-            <div class="nav">
-                <ul>
-                    <li class="red-line"><a href="#">HOME</a></li>
-                    <li><a href="./about.html">ABOUT</a></li>
-                    <li><a href="./blog.html">BLOG</a></li>
-                    <li><a href="./contact.html">CONTACT</a></li>
-                </ul>
+            <div class="row">
+                <div class="col col-8">
+                    <div class="item-left">
+                        <a href="./images/img/home4.gif">
+                            <img src="./images/img/home4.gif" alt="ảnh" height="300px">
+                        </a>
+                        <div class="blurd">
+                            <p>Top iPhone Apps</p>
+                            <p>
+                                Lorem ipsum dolor sit amet, ne utinam discere blandit vim, at iusto facilisis mel. Ceteroaudire sea an, has ex quem prima omnium.
+                            </p>
+                            <a href="./about.html" class="btn-more">
+                                <img src="./images/icons/icon-more.png" alt="ảnh"> 
+                                <span>More</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-4">
+                    <div class="item-right">
+                        <a href="./images/img/home5.gif">
+                            <img src="./images/img/home5.gif" alt="ảnh" height="184px">
+                        </a>
+                        <a href="./images/img/home_txt_res.gif">
+                            <img src="./images/img/home_txt_res.gif" alt="ảnh" height="110px">
+                        </a>
+                    </div>
+                </div>
             </div>
-        </div>
-        <!-- header end -->
+            <div class="row">
+                <div class="col col-4">
+                    <a href="./images/img/home_txt_lat.gif" class="item-bottom">
+                        <img src="./images/img/home_txt_lat.gif" alt="ảnh">
+                    </a>
+                </div>
+                <div class="col col-4">
+                    <a href="./images/img/home6.gif" class="item-bottom">
+                        <img src="./images/img/home6.gif" alt="ảnh" style="height: 118px;">
+                    </a>
+                </div>
+                <div class="col col-4">
+                    <a href="./images/img/home_bottom.gif" class="item-bottom">
+                        <img src="./images/img/home_bottom.gif" alt="ảnh">
+                    </a>
+                </div>
+            </div>
 
-        <!-- footer start -->
-        <hr color="#ececec" />
-        <div id="footer">
-            <div class="footer__social">
-                <ul>
-                    <li>
-                        <a href="">
-                                <img src="./images/icons/img-icon-twitter.gif" class="icon-twitter"></img>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <img src="./images/icons/img-icon-rss.gif" class="icon-rss"></img>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <img src="./images/icons/img-icon-fb.gif"class="icon-fb"></img>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <img src="./images/icons/img-icon-printer.gif" class="icon-printer"></img>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="footer-text">
-                <p class="footer-text__top">
-                    Best PSD Freebies  |  info@bestpsdfreebies.com
-                </p>
-                <p class="footer-text__bottom">
-                    Copyright 2012 Gridzilla Theme  www.bestpsdfreebies.com
-                </p>
-            </div>
         </div>
-        <!-- footer end -->
+        <!-- slider end -->
+
+        <!-- conntent start -->
+
     </div>
+
+    <hr color="#ececec" width="1200px" />
+    <!-- footer start -->
+    <div class="container" id="footer">
+        <div class="footer__social">
+            <ul>
+                <li>
+                    <a href="">
+                        <img src="./images/icons/img-icon-twitter.gif" class="icon-twitter"></img>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="./images/icons/img-icon-rss.gif" class="icon-rss"></img>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="./images/icons/img-icon-fb.gif" class="icon-fb"></img>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="./images/icons/img-icon-printer.gif" class="icon-printer"></img>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-text">
+            <p class="footer-text__top">
+                Best PSD Freebies | info@bestpsdfreebies.com
+            </p>
+            <p class="footer-text__bottom">
+                Copyright 2012 Gridzilla Theme www.bestpsdfreebies.com
+            </p>
+        </div>
+    </div>
+    <!-- footer end -->
 </body>
+
 </html>

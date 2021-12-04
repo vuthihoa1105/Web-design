@@ -2,31 +2,40 @@
     src: url(../font/Chunkfive.otf);
     font-family: 'ChunkFive';
 }
-
 @font-face {
     src: url(../font/FreeSansBold.otf);
     font-family: 'FreeSans';
 }
 @font-face {
-    src: url();
-    font-family: 'ChunkFive';
-}
-
-@font-face {
-    src: url(../font/Helvetica-Neue-Medium_22555.ttf);
+    src: url(../font/Helvetica\ Neue\ UltraLight.ttf);
     font-family: 'Helvetica';
 }
+@font-face {
+    src: url(../font/Helvetica-Neue-Medium_22555.ttf);
+    font-family: 'HelveticaM';
+}
 
+body {
+    background-color: #fdfdfd;
+}
 .container {
     max-width: 1200px;
     margin: 0 auto;
     height: 100%;
     display: block;
-    background-color: #fdfdfd;
-    font-family: 'Helvetica';
+    font-family: 'HelveticaM';
 }
 
 /* header */
+#header {
+    height: 134px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    background-color: #fff;
+}
 #header .header__top {
     font-family: ChunkFive;
     font-size: 36px;
@@ -52,7 +61,7 @@
     padding: 0px 10px; 
 }
 .search ::-webkit-input-placeholder { 
-    font-family: 'Helvetica';
+    font-family: 'HelveticaM';
     color: #ececec;
 }
 .header__top .search .icon-search {

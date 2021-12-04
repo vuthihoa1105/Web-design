@@ -7,14 +7,13 @@
     font-family: 'FreeSans';
 }
 @font-face {
-    src: url(../font/Helvetica\ Neue\ UltraLight.ttf);
+    src: url(../font/Helvetica-Neue-Medium_22555.ttf);
     font-family: 'Helvetica';
 }
 @font-face {
-    src: url(../font/Helvetica-Neue-Medium_22555.ttf);
-    font-family: 'HelveticaM';
+    src: url(../font/HelveticaNeue\ Bold.ttf);
+    font-family: 'HelveticaB';
 }
-
 body {
     background-color: #fdfdfd;
 }
@@ -23,7 +22,7 @@ body {
     margin: 0 auto;
     height: 100%;
     display: block;
-    font-family: 'HelveticaM';
+    font-family: 'Helvetica';
 }
 
 /* header */
@@ -35,6 +34,7 @@ body {
     right: 0;
     z-index: 10;
     background-color: #fff;
+    padding-bottom: 20px;
 }
 #header .header__top {
     font-family: ChunkFive;
@@ -61,7 +61,7 @@ body {
     padding: 0px 10px; 
 }
 .search ::-webkit-input-placeholder { 
-    font-family: 'HelveticaM';
+    font-family: 'Helvetica';
     color: #ececec;
 }
 .header__top .search .icon-search {

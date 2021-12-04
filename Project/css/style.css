@@ -1,0 +1,106 @@
+/* content */
+#content .sologan {
+    text-align: center;
+    font-family: 'ChunkFive';
+    font-size: 30px;
+}
+#content .sub-nav ul {
+    list-style-type: none;
+    display: flex;
+    width: 100%;
+    padding: 0;
+    margin-left: -10px;
+}
+.sub-nav ul li {
+    padding: 0 10px; 
+    font-family: 'Helvetica';
+    font-size: 14px;
+}
+.sub-nav li span {
+    color: #f03c3c;
+}
+.posts-item__par {
+    font-family: 'Helvetica';
+    text-align: left;
+    padding: 16px;
+    border: 1px solid #dbdbdb;
+    background-color: #fff;
+}
+img.posts-item__img{
+    width: 100%;
+    display: block;
+}
+
+.posts-item__par .title {
+    font-weight: 600;
+    font-size: 18px;
+    color: #2e2e2e;
+    margin: 0;
+}
+.posts-item__par .sub-title {
+    font-size: 11px;
+    font-weight: 100;
+    color: #8a8a8a;
+    margin: 0;
+}
+.posts-item__par .desc {
+    font-weight: 300;
+    font-size: 12px;
+    color: #2f2f2f;
+}
+
+.btn-more.black {
+    text-decoration: none;
+    color: #2e2e2e;
+    font-size: 12px;
+    width: 60px;
+    height: 12px;
+    display: flex;
+    justify-content: space-between;
+}
+#content .posts {
+    display: flex;
+    flex-direction: row;
+    margin-left: -10px;
+    margin-right: -10px;
+    padding-bottom: 20px;
+}
+.posts_col-4 {
+    width: 25%;
+}
+.posts__col {
+    padding: 10px;
+}
+
+.posts__row {
+    display: flex;
+    flex-direction: column;
+    
+}
+.posts__items.pd-20{
+    padding-top: 20px;
+}
+
+#content .page ul{
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+}
+
+.page li button {
+    background-image: url(../images/img/btn_number.gif);
+    border: none;
+    padding: 8px;
+    margin: 4px;
+    cursor: pointer;
+}
+
+.page li button:hover {
+    background-image: url(../images/img/btn_number_hover.gif);
+    background-repeat: no-repeat;
+}
+
+/* sologan blog */
+.sologan.mt-154 {
+    margin-top: 154px;
+}

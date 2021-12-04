@@ -7,6 +7,7 @@
     <title>Gridzilla</title>
     <link rel="stylesheet" href="./css/layout.css">
     <link rel="stylesheet" href="./css/grid.css">
+    <link rel="stylesheet" href="css/contact.css">
     <script src="./main.js"></script>
 </head>
 <body>
@@ -31,8 +32,31 @@
         </div>
         <!-- header end -->
 
-        <!-- <input type="email"> -->
-        
+        <!-- # content start -->
+        <div id="content"> 
+                <div  class="contact__title">
+                    <h1 >Contact Us. Locate Us. Send Us Your Thoughts!</h1>
+                </div>
+                <div class="Contact__desc">
+                    <p >Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Integer nec odio. Praesent libero. Sed cursus ante dapibus 
+                        diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet.
+                        Duis sagittis ipsum. Praesent mauris. Maecenas in magna mollis 
+                        lectus lacinia mollis. 
+                    </p>
+                </div>
+                <div class="contact__map">
+                    <img id="contact__map" src="./images/img/contact1.gif" alt="">
+                </div>
+                <form class="contact__form" action="">                     
+                        <input class="dataInput" id="Contact__firstname" type="text"  placeholder="FIRST NAME" >
+                        <input class="dataInput" id="Contact__lastname" type="text" placeholder="LAST NAME">     
+                        <input class="dataInput" id="Contact__email" type="email" placeholder="EMAIL ADDRESS">     
+                        <TExtarea id="Contact__Textarea" rows="5" cols="40"  placeholder="MESSAGE"></TExtarea>
+                    <input id="Contact__submit" type="submit" value=">> Submit">
+                </form>
+        </div>
+
         <!-- footer start -->
         <hr color="#ececec" />
         <div id="footer">

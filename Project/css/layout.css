@@ -7,14 +7,14 @@
     src: url(../font/FreeSansBold.otf);
     font-family: 'FreeSans';
 }
-@font-face {
-    src: url();
-    font-family: 'ChunkFive';
-}
 
 @font-face {
     src: url(../font/Helvetica-Neue-Medium_22555.ttf);
     font-family: 'Helvetica';
+}
+@font-face {
+    src: url(../font/HelveticaNeue\ Bold.ttf);
+    font-family: 'HelveticaB'
 }
 
 .container {

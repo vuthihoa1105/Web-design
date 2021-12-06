@@ -2,7 +2,6 @@
     src: url(../font/Chunkfive.otf);
     font-family: 'ChunkFive';
 }
-
 @font-face {
     src: url(../font/FreeSansBold.otf);
     font-family: 'FreeSans';
@@ -12,9 +11,9 @@
     src: url(../font/Helvetica-Neue-Medium_22555.ttf);
     font-family: 'Helvetica';
 }
-@font-face {
-    src: url(../font/HelveticaNeue\ Bold.ttf);
-    font-family: 'HelveticaB'
+
+body {
+    background-color: #fdfdfd;
 }
 
 .container {
@@ -22,11 +21,20 @@
     margin: 0 auto;
     height: 100%;
     display: block;
-    background-color: #fdfdfd;
     font-family: 'Helvetica';
 }
 
 /* header */
+#header {
+    height: 134px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    background-color: #fff;
+    padding-bottom: 20px;
+}
 #header .header__top {
     font-family: ChunkFive;
     font-size: 36px;

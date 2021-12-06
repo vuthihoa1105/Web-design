@@ -51,6 +51,7 @@ body {
 
 .header__top .search {
     position: relative;
+    cursor: pointer;
 }
 .header__top .search input{
     width: 200px;

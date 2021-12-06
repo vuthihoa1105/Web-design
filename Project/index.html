@@ -7,10 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gridzilla</title>
     <link rel="stylesheet" href="./css/layout.css">
-    <!-- <link rel="stylesheet" href="./css/grid.css"> -->
     <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./main.js"></script>
 </head>
-
 <body>
     <!-- header start -->
     <div class="container" id="header">
@@ -18,7 +18,7 @@
             <div class="logo">Gridzilla<span>.</span></div>
             <div class="search">
                 <input type="text" id="txt-search" placeholder="Enter your search ...">
-                <img src="images/icons/img-icon-search.gif" alt="ảnh" class="icon-search">
+                <img src="images/icons/img-icon-search.gif" alt="ảnh" class="icon-search" onclick="return search();">
             </div>
         </div>
         <div class="nav">
@@ -39,16 +39,19 @@
                 <div class="col col-4">
                     <a href="./images/img/collis.gif" class="item-top">
                         <img src="./images/img/collis.gif" alt="ảnh">
+                        <img src="./images/img/overlay.gif" alt="ảnh"  class="overlay">
                     </a>
                 </div>
                 <div class="col col-4">
                     <a href="./images/img/home2.gif" class="item-top">
                         <img src="./images/img/home2.gif" alt="ảnh">
+                        <img src="./images/img/overlay.gif" alt="ảnh"  class="overlay">
                     </a>
                 </div>
                 <div class="col col-4">
                     <a href="./images/img/home3.gif" class="item-top">
                         <img src="./images/img/home3.gif" alt="ảnh">
+                        <img src="./images/img/overlay.gif" alt="ảnh"  class="overlay">
                     </a>
                 </div>
             </div>
@@ -74,9 +77,11 @@
                     <div class="item-right">
                         <a href="./images/img/home5.gif">
                             <img src="./images/img/home5.gif" alt="ảnh" height="184px">
+                            <img src="./images/img/overlay.gif" alt="ảnh"  class="overlay">
                         </a>
                         <a href="./images/img/home_txt_res.gif">
                             <img src="./images/img/home_txt_res.gif" alt="ảnh" height="110px">
+                            <img src="./images/img/overlay.gif" alt="ảnh"  class="overlay">
                         </a>
                     </div>
                 </div>
@@ -84,17 +89,26 @@
             <div class="row">
                 <div class="col col-4">
                     <a href="./images/img/home_txt_lat.gif" class="item-bottom">
-                        <img src="./images/img/home_txt_lat.gif" alt="ảnh">
+                        <div class="shadow">
+                            <img src="./images/img/home_txt_lat.gif" alt="ảnh">
+                            <img src="./images/img/shadow_left.gif" alt="ảnh" class="img-shadow">
+                        </div>
+                        <img src="./images/img/overlay.gif" alt="ảnh"  class="overlay">
                     </a>
                 </div>
                 <div class="col col-4">
-                    <a href="./images/img/home6.gif" class="item-bottom">
-                        <img src="./images/img/home6.gif" alt="ảnh" style="height: 118px;">
+                    <a href="./images/img/home6.gif" class="item-bottom ">
+                        <img src="./images/img/home6.gif" alt="ảnh">
+                        <img src="./images/img/overlay.gif" alt="ảnh"  class="overlay">
                     </a>
                 </div>
                 <div class="col col-4">
-                    <a href="./images/img/home_bottom.gif" class="item-bottom">
-                        <img src="./images/img/home_bottom.gif" alt="ảnh">
+                    <a href="./images/img/home_bottom.gif" class="item-bottom shadow">
+                        <div class="shadow">
+                            <img src="./images/img/img_home.gif" alt="ảnh">
+                            <img src="./images/img/shadow_right.gif" alt="ảnh" class="img-shadow">
+                        </div>
+                        <img src="./images/img/overlay.gif" alt="ảnh"  class="overlay">
                     </a>
                 </div>
             </div>
@@ -120,80 +134,406 @@
                     <li>Development</li>
                 </ul>
             </div>
+            <!-- posts start -->
             <div class="posts">
-                <div class="row">
-                    <div class="col col-4">
-                        <div class="row mt10">
-                            <div class="col col-4 pd10">
-                                <div class="posts-item">
-                                    <img src="./images/img/home9.gif" alt="ảnh" class="posts-item__img">
-                                    <div class="posts-item__par">
-                                        <h2 class="title">Sticker Mule</h2>
-                                        <p class="sub-title">June 15, 2012  /  news, contests</p>
-                                        <p class="desc">
-                                            Lorem ipsum dolor sit amet, te possim inimicus ius. Alii ullam at corper pri ad, per nulla luptatum te, in qui delenit nostrum. Nam ad labores.
-                                        </p>
-                                        <a href="./sub_blog.html" class="btn-more black">
-                                            <img src="./images/icons/icon-more-black.gif" alt="ảnh">
-                                            <span>More</span> 
-                                        </a>
+                <!-- posts column 1 start-->
+                <div class="posts__col posts_col-4">
+                    <div class="posts__row">
+                        <div class="posts__items">
+                            <div class="items-img">
+                                <img src="./images/img/home9.gif" alt="ảnh" class="posts-item__img">
+                                <div class="hover">
+                                    <img src="./images/icons/btn_add.gif" alt="ảnh" class="img-add-btn">
+                                    <div class="info">
+                                        <div class="info-item">
+                                            <img src="./images/icons/icons8-eye-12.png" alt="ảnh">857
+                                        </div>
+                                        <div class="info-item">
+                                            <img src="./images/icons/icons8-clock-30.png" alt="ảnh" width="30px">07/05/12
+                                        </div>
+                                        <div class="info-item">
+                                            <img src="./images/icons/icons8-heart-24.png" alt="ảnh" width="30px">857
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col col-4 pd10">
-                                <div class="posts-item">
-                                    <img src="./images/img/home1.gif" alt="ảnh" class="posts-item__img">
-                                    <div class="posts-item__par">
-                                        <h2 class="title">10 Amazing Websites</h2>
-                                        <p class="sub-title">June 15, 2012</p>
-                                        <p class="desc">
-                                            Lorem ipsum dolor sit amet, te possim inimicus ius. Alii ullam at corper pri ad, per nulla luptatum te, in qui delenit nostrum. Nam ad labores.
-                                        </p>
-                                        <a href="./sub_blog.html" class="btn-more black">
-                                            <img src="./images/icons/icon-more-black.gif" alt="ảnh">
-                                            <span>More</span> 
-                                        </a>
+                            <div class="posts-item__par">
+                                <h2 class="title">Sticker Mule</h2>
+                                <p class="sub-title">June 15, 2012</p>
+                                <p class="desc">
+                                    Lorem ipsum dolor sit amet, te possim inimicus ius. Alii ullam at corper pri ad, per nulla luptatum te, in qui delenit nostrum. Nam ad labores.
+                                </p>
+                                <a href="./sub_blog.html" class="btn-more black">
+                                    <img src="./images/icons/icon-more-black.gif" alt="ảnh">
+                                    <span>More</span> 
+                                </a>
+                            </div>
+                        </div>
+                        <div class="posts__items">
+                            <div class="items-img">
+                                <img src="./images/img/home13.gif" alt="ảnh" class="posts-item__img">
+                                <div class="hover mt-20">
+                                    <img src="./images/icons/btn_add.gif" alt="ảnh" class="img-add-btn">
+                                    <div class="info">
+                                        <div class="info-item">
+                                            <img src="./images/icons/icons8-eye-12.png" alt="ảnh">857
+                                        </div>
+                                        <div class="info-item">
+                                            <img src="./images/icons/icons8-clock-30.png" alt="ảnh" width="30px">06/05/12
+                                        </div>
+                                        <div class="info-item">
+                                            <img src="./images/icons/icons8-heart-24.png" alt="ảnh" width="30px">858
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col col-4 pd10">
-                                <div class="posts-item">
-                                    <img src="./images/img/home11.gif" alt="ảnh" class="posts-item__img">
-                                    <div class="posts-item__par">
-                                        <h2 class="title">Top iPhone Apps</h2>
-                                        <p class="sub-title">June 15, 2012</p>
-                                        <p class="desc">
-                                            Lorem ipsum dolor sit amet, te possim inimicus ius. Alii ullam at corper pri ad, per nulla luptatum te, in qui delenit nostrum. Nam ad labores.
-                                        </p>
-                                        <a href="./sub_blog.html" class="btn-more black">
-                                            <img src="./images/icons/icon-more-black.gif" alt="ảnh">
-                                            <span>More</span> 
-                                        </a>
+                            <div class="posts-item__par">
+                                <h2 class="title">Big Buck Bunny</h2>
+                                <p class="sub-title">June 15, 2012</p>
+                                <p class="desc">
+                                    Lorem ipsum dolor sit amet, te possim inimicus ius. Alii ullam at corper pri ad, per nulla luptatum te, in qui delenit nostrum. Nam ad labores.
+                                </p>
+                                <a href="./sub_blog.html" class="btn-more black">
+                                    <img src="./images/icons/icon-more-black.gif" alt="ảnh">
+                                    <span>More</span> 
+                                </a>
+                            </div>
+                        </div>
+                        <div class="posts__items pd-20">
+                            <div class="items-img">
+                                <img src="./images/img/home17.gif" alt="ảnh" class="posts-item__img">
+                                <div class="hover">
+                                    <img src="./images/icons/btn_add.gif" alt="ảnh" class="img-add-btn">
+                                    <div class="info">
+                                        <div class="info-item">
+                                            <img src="./images/icons/icons8-eye-12.png" alt="ảnh">857
+                                        </div>
+                                        <div class="info-item">
+                                            <img src="./images/icons/icons8-clock-30.png" alt="ảnh" width="30px">06/05/12
+                                        </div>
+                                        <div class="info-item">
+                                            <img src="./images/icons/icons8-heart-24.png" alt="ảnh" width="30px">858
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col col-4 pd10">
-                                <div class="posts-item">
-                                    <img src="./images/img/home12.gif" alt="ảnh" class="posts-item__img">
-                                    <div class="posts-item__par">
-                                        <h2 class="title">Photo Shoot</h2>
-                                        <p class="sub-title">June 15, 2012</p>
-                                        <p class="desc">
-                                            Lorem ipsum dolor sit amet, te possim inimicus ius. Alii ullam at corper pri ad, per nulla luptatum te, in qui delenit nostrum. Nam ad labores.
-                                        </p>
-                                        <a href="./sub_blog.html" class="btn-more black">
-                                            <img src="./images/icons/icon-more-black.gif" alt="ảnh">
-                                            <span>More</span> 
-                                        </a>
-                                    </div>
-                                </div>
+                            <div class="posts-item__par">
+                                <h2 class="title">Sticker Mule</h2>
+                                <p class="sub-title">June 15, 2012</p>
+                                <p class="desc">
+                                    Lorem ipsum dolor sit amet, te possim inimicus ius. Alii ullam at corper pri ad, per nulla luptatum te, in qui delenit nostrum. Nam ad labores.
+                                </p>
+                                <a href="./sub_blog.html" class="btn-more black">
+                                    <img src="./images/icons/icon-more-black.gif" alt="ảnh">
+                                    <span>More</span> 
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
-                
-                 
-                   
+                <!-- posts column 1 end-->
+
+                <!-- posts column 2 start-->
+                <div class="posts__col posts_col-4">
+                    <div class="posts__row">
+                        <div class="posts__items">
+                            <div class="items-img">
+                                <img src="./images/img/home1.gif" alt="ảnh" class="posts-item__img">
+                                <div class="hover">
+                                    <img src="./images/icons/btn_add.gif" alt="ảnh" class="img-add-btn">
+                                    <div class="info">
+                                        <div class="info-item">
+                                            <img src="./images/icons/icons8-eye-12.png" alt="ảnh">857
+                                        </div>
+                                        <div class="info-item">
+                                            <img src="./images/icons/icons8-clock-30.png" alt="ảnh" width="30px">06/05/12
+                                        </div>
+                                        <div class="info-item">
+                                            <img src="./images/icons/icons8-heart-24.png" alt="ảnh" width="30px">858
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="posts-item__par">
+                                <h2 class="title">10 Amazing Websites</h2>
+                                <p class="sub-title">June 15, 2012</p>
+                                <p class="desc">
+                                    Lorem ipsum dolor sit amet, te possim inimicus ius. Alii ullam at corper pri ad, per nulla luptatum te, in qui delenit nostrum. Nam ad labores.
+                                </p>
+                                <a href="./sub_blog.html" class="btn-more black">
+                                    <img src="./images/icons/icon-more-black.gif" alt="ảnh">
+                                    <span>More</span> 
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="posts__items pd-20">
+                            <div class="items-img">
+                                <img src="./images/img/home_man.gif" alt="ảnh" class="posts-item__img">
+                                <div class="hover">
+                                    <img src="./images/icons/btn_add.gif" alt="ảnh" class="img-add-btn">
+                                    <div class="info">
+                                        <div class="info-item">
+                                            <img src="./images/icons/icons8-eye-12.png" alt="ảnh">857
+                                        </div>
+                                        <div class="info-item">
+                                            <img src="./images/icons/icons8-clock-30.png" alt="ảnh" width="30px">09/05/12
+                                        </div>
+                                        <div class="info-item">
+                                            <img src="./images/icons/icons8-heart-24.png" alt="ảnh" width="30px">850
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="posts-item__par">
+                                <h2 class="title">Character Design</h2>
+                                <p class="sub-title">June 15, 2012</p>
+                                <p class="desc">
+                                    Lorem ipsum dolor sit amet, te possim inimicus ius. Alii ullam at corper pri ad, per nulla luptatum te, in qui delenit nostrum. Nam ad labores.
+                                </p>
+                                <a href="./sub_blog.html" class="btn-more black">
+                                    <img src="./images/icons/icon-more-black.gif" alt="ảnh">
+                                    <span>More</span> 
+                                </a>
+                            </div>
+                        </div>
+                        <div class="posts__items">
+                            <div class="items-img">
+                                <img src="./images/img/home18.gif" alt="ảnh" class="posts-item__img">
+                                <div class="hover mt-20">
+                                    <img src="./images/icons/btn_add.gif" alt="ảnh" class="img-add-btn">
+                                    <div class="info">
+                                        <div class="info-item">
+                                            <img src="./images/icons/icons8-eye-12.png" alt="ảnh">857
+                                        </div>
+                                        <div class="info-item">
+                                            <img src="./images/icons/icons8-clock-30.png" alt="ảnh" width="30px">06/05/12
+                                        </div>
+                                        <div class="info-item">
+                                            <img src="./images/icons/icons8-heart-24.png" alt="ảnh" width="30px">858
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="posts-item__par">
+                                <h2 class="title">iPad 3 Review</h2>
+                                <p class="sub-title">June 15, 2012</p>
+                                <p class="desc">
+                                    Lorem ipsum dolor sit amet, te possim inimicus ius. Alii ullam at corper pri ad, per nulla luptatum te, in qui delenit nostrum. Nam ad labores.
+                                </p>
+                                <a href="./sub_blog.html" class="btn-more black">
+                                    <img src="./images/icons/icon-more-black.gif" alt="ảnh">
+                                    <span>More</span> 
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- posts column 2 end-->
+
+                <!-- posts column 3 start-->
+                <div class="posts__col posts_col-4">
+                    <div class="posts__row">
+                        <div class="posts__items">
+                            <div class="items-img">
+                                <img src="./images/img/home11.gif" alt="ảnh" class="posts-item__img">
+                                <div class="hover">
+                                    <img src="./images/icons/btn_add.gif" alt="ảnh" class="img-add-btn">
+                                    <div class="info">
+                                        <div class="info-item">
+                                            <img src="./images/icons/icons8-eye-12.png" alt="ảnh">857
+                                        </div>
+                                        <div class="info-item">
+                                            <img src="./images/icons/icons8-clock-30.png" alt="ảnh" width="30px">06/05/12
+                                        </div>
+                                        <div class="info-item">
+                                            <img src="./images/icons/icons8-heart-24.png" alt="ảnh" width="30px">858
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="posts-item__par">
+                                <h2 class="title">Top iPhone Apps</h2>
+                                <p class="sub-title">June 15, 2012</p>
+                                <p class="desc">
+                                    Lorem ipsum dolor sit amet, te possim inimicus ius. Alii ullam at corper pri ad, per nulla luptatum te, in qui delenit nostrum. Nam ad labores.
+                                </p>
+                                <a href="./sub_blog.html" class="btn-more black">
+                                    <img src="./images/icons/icon-more-black.gif" alt="ảnh">
+                                    <span>More</span> 
+                                </a>
+                            </div>
+                        </div>
+                        <div class="posts__items">
+                            <div class="items-img">
+                                <img src="./images/img/home15.gif" alt="ảnh" class="posts-item__img">
+                                <div class="hover mt-20">
+                                    <img src="./images/icons/btn_add.gif" alt="ảnh" class="img-add-btn">
+                                    <div class="info">
+                                        <div class="info-item">
+                                            <img src="./images/icons/icons8-eye-12.png" alt="ảnh">857
+                                        </div>
+                                        <div class="info-item">
+                                            <img src="./images/icons/icons8-clock-30.png" alt="ảnh" width="30px">06/05/12
+                                        </div>
+                                        <div class="info-item">
+                                            <img src="./images/icons/icons8-heart-24.png" alt="ảnh" width="30px">858
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="posts-item__par">
+                                <h2 class="title">Service Icons</h2>
+                                <p class="sub-title">June 15, 2012</p>
+                                <p class="desc">
+                                    Lorem ipsum dolor sit amet, te possim inimicus ius. Alii ullam at corper pri ad, per nulla luptatum te, in qui delenit nostrum. Nam ad labores.
+                                </p>
+                                <a href="./sub_blog.html" class="btn-more black">
+                                    <img src="./images/icons/icon-more-black.gif" alt="ảnh">
+                                    <span>More</span> 
+                                </a>
+                            </div>
+                        </div>
+                        <div class="posts__items">
+                            <div class="items-img">
+                                <img src="./images/img/home19.gif" alt="ảnh" class="posts-item__img">
+                                <div class="hover mt-24">
+                                    <img src="./images/icons/btn_add.gif" alt="ảnh" class="img-add-btn">
+                                    <div class="info">
+                                        <div class="info-item">
+                                            <img src="./images/icons/icons8-eye-12.png" alt="ảnh">857
+                                        </div>
+                                        <div class="info-item">
+                                            <img src="./images/icons/icons8-clock-30.png" alt="ảnh" width="30px">06/05/12
+                                        </div>
+                                        <div class="info-item">
+                                            <img src="./images/icons/icons8-heart-24.png" alt="ảnh" width="30px">858
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> 
+                            <div class="posts-item__par">
+                                <h2 class="title">iPad 3 Review</h2>
+                                <p class="sub-title">June 15, 2012</p>
+                                <p class="desc">
+                                    Lorem ipsum dolor sit amet, te possim inimicus ius. Alii ullam at corper pri ad, per nulla luptatum te, in qui delenit nostrum. Nam ad labores.
+                                </p>
+                                <a href="./sub_blog.html" class="btn-more black">
+                                    <img src="./images/icons/icon-more-black.gif" alt="ảnh">
+                                    <span>More</span> 
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- posts column 3 end-->
+
+                <!-- posts column 4 start-->
+                <div class="posts__col posts_col-4">
+                    <div class="posts__row">
+                        <div class="posts__items">
+                            <div class="items-img">
+                                <img src="./images/img/home12.gif" alt="ảnh" class="posts-item__img">
+                                <div class="hover">
+                                    <img src="./images/icons/btn_add.gif" alt="ảnh" class="img-add-btn">
+                                    <div class="info">
+                                        <div class="info-item">
+                                            <img src="./images/icons/icons8-eye-12.png" alt="ảnh">857
+                                        </div>
+                                        <div class="info-item">
+                                            <img src="./images/icons/icons8-clock-30.png" alt="ảnh" width="30px">06/05/12
+                                        </div>
+                                        <div class="info-item">
+                                            <img src="./images/icons/icons8-heart-24.png" alt="ảnh" width="30px">858
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="posts-item__par">
+                                <h2 class="title">Photo Shoot</h2>
+                                <p class="sub-title">June 15, 2012</p>
+                                <p class="desc">
+                                    Lorem ipsum dolor sit amet, te possim inimicus ius. Alii ullam at corper pri ad, per nulla luptatum te, in qui delenit nostrum. Nam ad labores.
+                                </p>
+                                <a href="./sub_blog.html" class="btn-more black">
+                                    <img src="./images/icons/icon-more-black.gif" alt="ảnh">
+                                    <span>More</span> 
+                                </a>
+                            </div>
+                        </div>
+                        <div class="posts__items pd-20">
+                            <div class="items-img">
+                                <img src="./images/img/home5.gif" alt="ảnh" class="posts-item__img">
+                                <div class="hover">
+                                    <img src="./images/icons/btn_add.gif" alt="ảnh" class="img-add-btn">
+                                    <div class="info">
+                                        <div class="info-item">
+                                            <img src="./images/icons/icons8-eye-12.png" alt="ảnh">857
+                                        </div>
+                                        <div class="info-item">
+                                            <img src="./images/icons/icons8-clock-30.png" alt="ảnh" width="30px">06/05/12
+                                        </div>
+                                        <div class="info-item">
+                                            <img src="./images/icons/icons8-heart-24.png" alt="ảnh" width="30px">858
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="posts-item__par">
+                                <h2 class="title">Wedding Card</h2>
+                                <p class="sub-title">June 15, 2012</p>
+                                <p class="desc">
+                                    Lorem ipsum dolor sit amet, te possim inimicus ius. Alii ullam at corper pri ad, per nulla luptatum te, in qui delenit nostrum. Nam ad labores.
+                                </p>
+                                <a href="./sub_blog.html" class="btn-more black">
+                                    <img src="./images/icons/icon-more-black.gif" alt="ảnh">
+                                    <span>More</span> 
+                                </a>
+                            </div>
+                        </div>
+                        <div class="posts__items">
+                            <div class="items-img">
+                                <img src="./images/img/home20.gif" alt="ảnh" class="posts-item__img">
+                                <div class="hover">
+                                    <img src="./images/icons/btn_add.gif" alt="ảnh" class="img-add-btn">
+                                    <div class="info">
+                                        <div class="info-item">
+                                            <img src="./images/icons/icons8-eye-12.png" alt="ảnh">857
+                                        </div>
+                                        <div class="info-item">
+                                            <img src="./images/icons/icons8-clock-30.png" alt="ảnh" width="30px">06/05/12
+                                        </div>
+                                        <div class="info-item">
+                                            <img src="./images/icons/icons8-heart-24.png" alt="ảnh" width="30px">858
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="posts-item__par">
+                                <h2 class="title">Silver UI Kit</h2>
+                                <p class="sub-title">June 15, 2012</p>
+                                <p class="desc">
+                                    Lorem ipsum dolor sit amet, te possim inimicus ius. Alii ullam at corper pri ad, per nulla luptatum te, in qui delenit nostrum. Nam ad labores.
+                                </p>
+                                <a href="./sub_blog.html" class="btn-more black">
+                                    <img src="./images/icons/icon-more-black.gif" alt="ảnh">
+                                    <span>More</span> 
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- posts column 4 end-->
+            </div>
+            <!-- posts end -->
+
+            <div class="page">
+                <ul>
+                    <li><button>1</button></li>
+                    <li><button>2</button></li>
+                    <li><button>3</button></li>
+                    <li><button>4</button></li>
+                </ul>
             </div>
         </div>
         <!-- content end -->
@@ -237,5 +577,4 @@
     </div>
     <!-- footer end -->
 </body>
-
 </html>

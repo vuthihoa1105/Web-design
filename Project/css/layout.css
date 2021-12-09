@@ -8,11 +8,6 @@
     font-family: 'FreeSans';
 }
 @font-face {
-    src: url();
-    font-family: 'ChunkFive';
-}
-
-@font-face {
     src: url(../font/Helvetica-Neue-Medium_22555.ttf);
     font-family: 'Helvetica';
 }
@@ -28,7 +23,7 @@
 
 /* header */
 #header .header__top {
-    font-family: ChunkFive;
+    font-family: 'ChunkFive';
     font-size: 36px;
     color: #000;
     height: 95px;

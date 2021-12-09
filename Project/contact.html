@@ -49,11 +49,11 @@
                     <img id="contact__map" src="./images/img/contact1.gif" alt="">
                 </div>
                 <form class="contact__form" action="">                     
-                        <input class="dataInput" id="Contact__firstname" type="text"  placeholder="FIRST NAME" >
-                        <input class="dataInput" id="Contact__lastname" type="text" placeholder="LAST NAME">     
+                        <input class="dataInput" id="Contact__firstname" type="text" required placeholder="FIRST NAME" >
+                        <input class="dataInput" id="Contact__lastname" type="text" required placeholder="LAST NAME" >     
                         <input class="dataInput" id="Contact__email" type="email" placeholder="EMAIL ADDRESS">     
                         <TExtarea id="Contact__Textarea" rows="5" cols="40"  placeholder="MESSAGE"></TExtarea>
-                    <input id="Contact__submit" type="submit" value=">> Submit">
+                    <input id="Contact__submit" type="submit" value=">> Submit" onclick="check()">
                 </form>
         </div>
         </div>

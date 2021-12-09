@@ -1,41 +1,43 @@
-function checkFirstName(){
-    var firstName=document.getElementById("Contact__firstname").value;
-    if (firstName==""){
-        alert("bạn không được để trống tên ");
-        checkFirstName.select();
+function checkName(){
+    var firstName = document.getElementById("Contact__firstname").value;
+    var lastName = document.getElementById("Contact__lastname").value;
+    if (firstName == ""){
+        alert("Please enter your first name! ");
         return false;
      } 
-     if (document.getElementById("Contact__lastname").value==null || document.getElementById("Contact__lastname").value==""){
-         alert("bạn không được để trống họ ");
-        checkLastName.select();
+     if (lastName == "") {
+         alert("Please enter your last name! ");
         return false;
      } 
 }
-// function checkLastName(){
-//      if (document.getElementById("Contact__lastname").value==null || document.getElementById("Contact__lastname").value==""){
-//          alert("bạn không được để trống họ ");
-//         checkLastName.select();
-//         return false;
-//      }
-// }
-function checkEmail(){
-    // var checkEmil = document.getElementById("Contact__email").value;
-    // var reg_mail = /^[A-Za-z0-9]+([_\.\-]?[A-Za-z0-9])*@[A-Za-z0-9]+([\.\-]?[A-Za-z0-9]+)*(\.[A-Za-z]+)+$/;
-    // if (reg_mail.test(checkEmail)){
-    //     alert("đia chỉ Email không hợp lệ");
-    //     return false;
-    // }
-//     else
-//          alert("địa chỉ Email hợp lệ");
-//             if(id == 'email'){
-//                 if(reg_mail.test(value) == false){ 
-//                     span.innerHTML ='Email không hợp lệ (ví dụ: abc@gmail.com)';
-//                     }
-//                 var email =value;
-//                 }
-// }
+function checkEmail() {
+    var emailTag = document.getElementById("Contact__email");
+    var email = emailTag.value;
+    if (email == "") {
+        alert("Please enter your email!");
+        return false;
+    }
+
+    var regexEmail = /^[\w\.\-]+@\w+(\.\w+){1,3}$/;
+    if (!regexEmail.test(email)) {
+        alert("Email must be in the form abc@gmail.com");
+        return false;
+    }
+}
+function checkMessage(){
+    var messageTap = document.getElementById("Contact__Textarea");
+    var message = messageTap.value;
+    if (message == "") {
+        alert("Please enter your message!");
+        return false;
+    }
+    if (message.length > 200) {
+        alert("can't log in for more than 200 years");
+        return false;
+    }
+}
 function check(){
-    checkFirstName();
-    checkLastName();
+    checkName();
     checkEmail();
+    checkMessage();
 }

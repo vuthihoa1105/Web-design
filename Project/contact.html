@@ -6,12 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gridzilla</title>
     <link rel="stylesheet" href="./css/layout.css">
+    <link rel="stylesheet" href="./css/grid.css">
+    <link rel="stylesheet" href="css/contact.css">
     <script src="./main.js"></script>
 </head>
 <body>
-    <div class="container">
         <!-- header start -->
-        <div id="header">
+        <div class="container" id="header">
             <div class="header__top">
                 <div class="logo">Gridzilla<span>.</span></div>
                 <div class="search">
@@ -30,9 +31,36 @@
         </div>
         <!-- header end -->
 
+        <!-- # content start -->
+        <div class="container">
+            <div id="content"> 
+                <div  class="contact__title">
+                    <h1 >Contact Us. Locate Us. Send Us Your Thoughts!</h1>
+                </div>
+                <div class="Contact__desc">
+                    <p >Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Integer nec odio. Praesent libero. Sed cursus ante dapibus 
+                        diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet.
+                        Duis sagittis ipsum. Praesent mauris. Maecenas in magna mollis 
+                        lectus lacinia mollis. 
+                    </p>
+                </div>
+                <div class="contact__map">
+                    <img id="contact__map" src="./images/img/contact1.gif" alt="">
+                </div>
+                <form class="contact__form" action="" onsubmit="return check()">                     
+                        <input class="dataInput" id="Contact__firstname" type="text" placeholder="FIRST NAME" >
+                        <input class="dataInput" id="Contact__lastname" type="text" placeholder="LAST NAME" >     
+                        <input class="dataInput" id="Contact__email" type="text" placeholder="EMAIL ADDRESS">     
+                        <TExtarea id="Contact__Textarea" rows="5" cols="40" placeholder="MESSAGE"></TExtarea>
+                    <input id="Contact__submit" type="submit" value=">> Submit">
+                </form>
+        </div>
+        </div>
+
         <!-- footer start -->
-        <hr color="#ececec" />
-        <div id="footer">
+        <hr color="#ececec" width="1200px"/>
+        <div class="container" id="footer">
             <div class="footer__social">
                 <ul>
                     <li>
@@ -67,6 +95,5 @@
             </div>
         </div>
         <!-- footer end -->
-    </div>
 </body>
 </html>
